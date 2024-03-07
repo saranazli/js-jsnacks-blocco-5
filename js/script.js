@@ -79,6 +79,42 @@ console.log(myString);
 const myStringRev = myString.split('').reverse().join('');
 console.log(myStringRev);
 
+// snack 4 fonduta
+
+const arrayUno = [ 'ciao', 'sara', 'bene'];
+const arrayDue = [ 'cara', 'stai', '?'];
+let arrayTre = [];
+
+pushWords();
+pushWords1();
+
+setInterval(pushWords,2000);
+setInterval(pushWords1,1000);
+
+
+function pushWords (){
+  for (let word of arrayUno){
+    
+    arrayTre += word;
+
+  }
+}
+
+function pushWords1 (){
+  for (let word1 of arrayDue){
+    
+    arrayTre += word1;
+
+  }
+}
+
+
+
+
+
+console.log(arrayTre);
+console.log();
+
 
 
 
