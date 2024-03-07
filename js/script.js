@@ -38,13 +38,13 @@ let somma = 0;
 let zucchineCorte = [];
 let zucchineLunghe = [];
 
-zucchine.forEach(elemento =>{
+zucchine.forEach(zuc =>{
  
-  somma += elemento.peso;
+  somma += zuc.peso;
 
-  zucchinaLunga = elemento.lughezza >= 15 
+  zucchinaLunga = zuc.lughezza >= 15 
   
-  zucchinaLunga ? zucchineLunghe.push(elemento.lughezza) : zucchineCorte.push(elemento.lughezza)
+  zucchinaLunga ? zucchineLunghe.push(zuc.lughezza) : zucchineCorte.push(zuc.lughezza)
 
 });
 
@@ -68,14 +68,20 @@ for (let cml of zucchineLunghe){
 
 console.log(sommaZL);
 
-const stringa = ( ) => {
+// snack 3 reverse 
 
-  const arreyString = ['ciao'];
-  
-  return arreyString
-}
+const stringa = ( ) => 'ciao';
 
-console.log(arreyString);
+const myString = stringa();
+
+console.log(myString);
+
+const myStringRev = myString.split('').reverse().join('');
+console.log(myStringRev);
+
+
+
+
 
 
 
