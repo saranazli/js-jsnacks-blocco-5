@@ -4,42 +4,83 @@ const zucchine = [
   {
     varietà : 'verde',
     peso : 20,
-    lughezza : '15 cm'
+    lughezza : 16
   },
 
   {
     varietà : 'verde',
     peso : 10,
-    lughezza : '15 cm'
+    lughezza : 13
   },
 
   {
     varietà : 'verde',
     peso : 50,
-    lughezza : '15 cm'
+    lughezza : 15
   },
 
   {
     varietà : 'verde',
     peso : 10,
-    lughezza : '15 cm'
+    lughezza : 17
   },
 
   {
     varietà : 'verde',
     peso : 30,
-    lughezza : '15 cm'
+    lughezza : 12
   },
 
 ]
 
 let somma = 0;
 
-zucchine.forEach(pesi =>{
+let zucchineCorte = [];
+let zucchineLunghe = [];
+
+zucchine.forEach(elemento =>{
  
-  somma += pesi.peso;
+  somma += elemento.peso;
+
+  zucchinaLunga = elemento.lughezza >= 15 
+  
+  zucchinaLunga ? zucchineLunghe.push(elemento.lughezza) : zucchineCorte.push(elemento.lughezza)
 
 });
 
 console.log(somma);
+console.log(zucchineCorte);
+console.log(zucchineLunghe);
+
+let sommaZC = 0;
+
+for (let cm of zucchineCorte){
+  sommaZC += cm;
+};
+
+console.log(sommaZC);
+
+let sommaZL = 0;
+
+for (let cml of zucchineLunghe){
+  sommaZL += cml;
+};
+
+console.log(sommaZL);
+
+const stringa = ( ) => {
+
+  const arreyString = ['ciao'];
+  
+  return arreyString
+}
+
+console.log(arreyString);
+
+
+
+
+
+
+
 
